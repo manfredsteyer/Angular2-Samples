@@ -1,0 +1,14 @@
+<style>
+    @import url('bower_components/bootstrap/dist/css/bootstrap.css');
+</style>
+
+<h1>Direktiven-Sample</h1>
+
+<optionbox #box [selected]="versandart" (changed)="changed(box.selected)">
+    <item value="Per Express"></item>
+    <item value="Per Einschreiben"></item>
+</optionbox>
+
+<div>
+Gewählt: {{ versandart }}
+</div>
